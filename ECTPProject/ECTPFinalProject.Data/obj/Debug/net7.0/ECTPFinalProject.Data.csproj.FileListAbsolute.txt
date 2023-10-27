@@ -1,0 +1,15 @@
+C:\Users\claire.bowman\source\repos\ECTPFinalProject\ECTPFinalProject.Data\bin\Debug\net7.0\ECTPFinalProject.Data.deps.json
+C:\Users\claire.bowman\source\repos\ECTPFinalProject\ECTPFinalProject.Data\bin\Debug\net7.0\ECTPFinalProject.Data.dll
+C:\Users\claire.bowman\source\repos\ECTPFinalProject\ECTPFinalProject.Data\bin\Debug\net7.0\ECTPFinalProject.Data.pdb
+C:\Users\claire.bowman\source\repos\ECTPFinalProject\ECTPFinalProject.Data\bin\Debug\net7.0\ECTPFinalProject.Core.dll
+C:\Users\claire.bowman\source\repos\ECTPFinalProject\ECTPFinalProject.Data\bin\Debug\net7.0\ECTPFinalProject.Core.pdb
+C:\Users\claire.bowman\source\repos\ECTPFinalProject\ECTPFinalProject.Data\obj\Debug\net7.0\ECTPFinalProject.Data.csproj.AssemblyReference.cache
+C:\Users\claire.bowman\source\repos\ECTPFinalProject\ECTPFinalProject.Data\obj\Debug\net7.0\ECTPFinalProject.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\claire.bowman\source\repos\ECTPFinalProject\ECTPFinalProject.Data\obj\Debug\net7.0\ECTPFinalProject.Data.AssemblyInfoInputs.cache
+C:\Users\claire.bowman\source\repos\ECTPFinalProject\ECTPFinalProject.Data\obj\Debug\net7.0\ECTPFinalProject.Data.AssemblyInfo.cs
+C:\Users\claire.bowman\source\repos\ECTPFinalProject\ECTPFinalProject.Data\obj\Debug\net7.0\ECTPFinalProject.Data.csproj.CoreCompileInputs.cache
+C:\Users\claire.bowman\source\repos\ECTPFinalProject\ECTPFinalProject.Data\obj\Debug\net7.0\ECTPFinalProject.Data.csproj.CopyComplete
+C:\Users\claire.bowman\source\repos\ECTPFinalProject\ECTPFinalProject.Data\obj\Debug\net7.0\ECTPFinalProject.Data.dll
+C:\Users\claire.bowman\source\repos\ECTPFinalProject\ECTPFinalProject.Data\obj\Debug\net7.0\refint\ECTPFinalProject.Data.dll
+C:\Users\claire.bowman\source\repos\ECTPFinalProject\ECTPFinalProject.Data\obj\Debug\net7.0\ECTPFinalProject.Data.pdb
+C:\Users\claire.bowman\source\repos\ECTPFinalProject\ECTPFinalProject.Data\obj\Debug\net7.0\ref\ECTPFinalProject.Data.dll

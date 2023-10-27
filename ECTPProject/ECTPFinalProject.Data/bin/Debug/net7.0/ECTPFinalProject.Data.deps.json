@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "ECTPFinalProject.Data/1.0.0": {
+        "dependencies": {
+          "ECTPFinalProject.Core": "1.0.0"
+        },
+        "runtime": {
+          "ECTPFinalProject.Data.dll": {}
+        }
+      },
+      "ECTPFinalProject.Core/1.0.0": {
+        "runtime": {
+          "ECTPFinalProject.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ECTPFinalProject.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ECTPFinalProject.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

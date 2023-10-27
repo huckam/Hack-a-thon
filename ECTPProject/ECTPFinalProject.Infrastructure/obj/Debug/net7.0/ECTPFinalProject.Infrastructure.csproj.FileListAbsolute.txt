@@ -1,0 +1,17 @@
+C:\Users\claire.bowman\source\repos\ECTPFinalProject\ECTPFinalProject.Infrastructure\bin\Debug\net7.0\ECTPFinalProject.Infrastructure.deps.json
+C:\Users\claire.bowman\source\repos\ECTPFinalProject\ECTPFinalProject.Infrastructure\bin\Debug\net7.0\ECTPFinalProject.Infrastructure.dll
+C:\Users\claire.bowman\source\repos\ECTPFinalProject\ECTPFinalProject.Infrastructure\bin\Debug\net7.0\ECTPFinalProject.Infrastructure.pdb
+C:\Users\claire.bowman\source\repos\ECTPFinalProject\ECTPFinalProject.Infrastructure\bin\Debug\net7.0\ECTPFinalProject.Core.dll
+C:\Users\claire.bowman\source\repos\ECTPFinalProject\ECTPFinalProject.Infrastructure\bin\Debug\net7.0\ECTPFinalProject.Data.dll
+C:\Users\claire.bowman\source\repos\ECTPFinalProject\ECTPFinalProject.Infrastructure\bin\Debug\net7.0\ECTPFinalProject.Core.pdb
+C:\Users\claire.bowman\source\repos\ECTPFinalProject\ECTPFinalProject.Infrastructure\bin\Debug\net7.0\ECTPFinalProject.Data.pdb
+C:\Users\claire.bowman\source\repos\ECTPFinalProject\ECTPFinalProject.Infrastructure\obj\Debug\net7.0\ECTPFinalProject.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\claire.bowman\source\repos\ECTPFinalProject\ECTPFinalProject.Infrastructure\obj\Debug\net7.0\ECTPFinalProject.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\claire.bowman\source\repos\ECTPFinalProject\ECTPFinalProject.Infrastructure\obj\Debug\net7.0\ECTPFinalProject.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\claire.bowman\source\repos\ECTPFinalProject\ECTPFinalProject.Infrastructure\obj\Debug\net7.0\ECTPFinalProject.Infrastructure.AssemblyInfo.cs
+C:\Users\claire.bowman\source\repos\ECTPFinalProject\ECTPFinalProject.Infrastructure\obj\Debug\net7.0\ECTPFinalProject.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\claire.bowman\source\repos\ECTPFinalProject\ECTPFinalProject.Infrastructure\obj\Debug\net7.0\ECTPFinalProject.Infrastructure.csproj.CopyComplete
+C:\Users\claire.bowman\source\repos\ECTPFinalProject\ECTPFinalProject.Infrastructure\obj\Debug\net7.0\ECTPFinalProject.Infrastructure.dll
+C:\Users\claire.bowman\source\repos\ECTPFinalProject\ECTPFinalProject.Infrastructure\obj\Debug\net7.0\refint\ECTPFinalProject.Infrastructure.dll
+C:\Users\claire.bowman\source\repos\ECTPFinalProject\ECTPFinalProject.Infrastructure\obj\Debug\net7.0\ECTPFinalProject.Infrastructure.pdb
+C:\Users\claire.bowman\source\repos\ECTPFinalProject\ECTPFinalProject.Infrastructure\obj\Debug\net7.0\ref\ECTPFinalProject.Infrastructure.dll
