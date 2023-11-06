@@ -1,0 +1,17 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/ECTPFinalProject/.vs/ECTPFinalProject
+/ECTPFinalProject/ECTPFinalProject.API/bin/Debug/net7.0
+/ECTPFinalProject/ECTPFinalProject.API/obj
+/ECTPFinalProject/ECTPFinalProject.Core/bin/Debug/net7.0
+/ECTPFinalProject/ECTPFinalProject.Core/obj
+/ECTPFinalProject/ECTPFinalProject.Data/obj
+/ECTPFinalProject/ECTPFinalProject.Infrastructure/bin/Debug/net7.0
+/ECTPFinalProject/ECTPFinalProject.Infrastructure/obj
+/ECTPFinalProject/ECTPFinalProject.Tests/bin/Debug/net7.0
+/ECTPFinalProject/ECTPFinalProject.Tests/obj
+/ECTPFinalProject/ECTPFinalProject.Website/bin/Debug/net7.0
+/ECTPFinalProject/ECTPFinalProject.Website/obj
