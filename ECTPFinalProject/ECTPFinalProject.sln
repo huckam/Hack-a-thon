@@ -5,15 +5,21 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECTPFinalProject.Core", "ECTPFinalProject.Core\ECTPFinalProject.Core.csproj", "{8F41746D-91E1-411C-B4C0-1282E447BBDE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECTPFinalProject.Data", "ECTPFinalProject.Data\ECTPFinalProject.Data.csproj", "{343AFA59-2962-4AE6-A9CF-D2F6381720E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECTPFinalProject.Data", "ECTPFinalProject.Data\ECTPFinalProject.Data.csproj", "{343AFA59-2962-4AE6-A9CF-D2F6381720E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECTPFinalProject.Infrastructure", "ECTPFinalProject.Infrastructure\ECTPFinalProject.Infrastructure.csproj", "{DD62A8DA-FAAE-4614-B8E3-D61CD3A9C15B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECTPFinalProject.Infrastructure", "ECTPFinalProject.Infrastructure\ECTPFinalProject.Infrastructure.csproj", "{DD62A8DA-FAAE-4614-B8E3-D61CD3A9C15B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECTPFinalProject.API", "ECTPFinalProject.API\ECTPFinalProject.API.csproj", "{5645A40D-574B-4345-B6BA-3006F6D1DEC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECTPFinalProject.API", "ECTPFinalProject.API\ECTPFinalProject.API.csproj", "{5645A40D-574B-4345-B6BA-3006F6D1DEC1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECTPFinalProject.Tests", "ECTPFinalProject.Tests\ECTPFinalProject.Tests.csproj", "{8C08CC68-DDEF-419D-9717-A484FF961D51}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECTPFinalProject.Tests", "ECTPFinalProject.Tests\ECTPFinalProject.Tests.csproj", "{8C08CC68-DDEF-419D-9717-A484FF961D51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECTPFinalProject.Website", "ECTPFinalProject.Website\ECTPFinalProject.Website.csproj", "{3602E051-3195-45A0-AF90-321B196B6470}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECTPFinalProject.Website", "ECTPFinalProject.Website\ECTPFinalProject.Website.csproj", "{3602E051-3195-45A0-AF90-321B196B6470}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A8381ECB-4833-40FD-85B4-C7568A576F2D}"
+	ProjectSection(SolutionItems) = preProject
+		..\.editorconfig = ..\.editorconfig
+		..\.gitignore = ..\.gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

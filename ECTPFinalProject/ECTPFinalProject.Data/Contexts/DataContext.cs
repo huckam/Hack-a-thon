@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using ECTPFinalProject.Core.Entities;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,13 +8,15 @@ using System.Threading.Tasks;
 
 namespace ECTPFinalProject.Data.Contexts
 {
-    public class SampleContext : DbContext
+    public class DataContext : DbContext
     {
-        public SampleContext(DbContextOptions<SampleContext> context) : base(context) { }
+        public DataContext(DbContextOptions<DataContext> context) : base(context)
+        {
+        }
 
         // TODO: Replace with your own DbSets.
 
-        //public DbSet<SampleEntity> SampleEntities { get; set; }
+        public DbSet<Event> Event { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

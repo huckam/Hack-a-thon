@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace ECTPFinalProject.Data.EntityConfigurations
 {
-    public class SampleEntityConfiguration : IEntityTypeConfiguration<SampleEntity>
+    public class SampleEntityConfiguration : IEntityTypeConfiguration<Event>
     {
-        public void Configure(EntityTypeBuilder<SampleEntity> builder)
+        public void Configure(EntityTypeBuilder<Event> builder)
         {
             //TODO: Add configurations that define primary keys, relationships between other entities, any restrictions on properties
 
