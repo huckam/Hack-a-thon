@@ -1,29 +1,23 @@
 ﻿using ECTPFinalProject.Core.Entities;
+using ECTPFinalProject.Data.EntityConfigurations;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ECTPFinalProject.Data.Contexts
+namespace ECTPFinalProject.Data.Contexts;
+
+public class DataContext : DbContext
 {
-    public class DataContext : DbContext
+    public DataContext(DbContextOptions<DataContext> context) : base(context)
+    { }
+
+    public DbSet<Event> Events { get; set; }
+    public DbSet<EventType> EventTypes { get; set; }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        public DataContext(DbContextOptions<DataContext> context) : base(context)
-        {
-        }
+        // TODO: Replace with your own entity configurations.
+        modelBuilder.ApplyConfiguration(new EventEntityTypeConfiguration());
+        modelBuilder.ApplyConfiguration(new EventTypeEntityTypeConfiguration());
 
-        // TODO: Replace with your own DbSets.
-
-        public DbSet<Event> Event { get; set; }
-
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            // TODO: Replace with your own entity configurations.
-            //modelBuilder.ApplyConfiguration(new SampleEntityTypeConfiguration());
-
-            base.OnModelCreating(modelBuilder);
-        }
+        base.OnModelCreating(modelBuilder);
     }
 }

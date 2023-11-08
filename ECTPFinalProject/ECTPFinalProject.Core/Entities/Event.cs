@@ -4,7 +4,7 @@ namespace ECTPFinalProject.Core.Entities
 {
     public class Event
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
 
         [Required]
         public string Name { get; set; }

@@ -1,19 +1,20 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
+using ECTPFinalProject.Data.Contexts;
+using ECTPFinalProject.Data.Interfaces;
+
+using ECTPFinalProject.Data.Repositories;
+
 
 namespace ECTPFinalProject.Data.Helpers
 {
     public static class DatabaseHelperExtensions
     {
-        public static IServiceCollection AddEntityFrameworkRepositories(this IServiceCollection services, Action<DbContextOptionsBuilder> setup)
-        {
-            // TODO: Replace context and repositories with your own.
-
-            //services.AddDbContext<SampleContext>(setup);
-            //services.AddTransient<ISampleRepository, SampleRepository>();
-
-            return services;
-        }
+        public static IServiceCollection AddEntityFrameworkRepositories(this IServiceCollection services,
+            Action<DbContextOptionsBuilder> setup) =>
+            services.AddDbContext<DataContext>(setup)
+                .AddScoped<IEventRepository, EventRepository>()
+                .AddScoped<IEventTypeRepository, EventTypeRepository>();
 
         public static IServiceCollection AddEntityFrameworkRepositories(this IServiceCollection services,
             string connection) =>
