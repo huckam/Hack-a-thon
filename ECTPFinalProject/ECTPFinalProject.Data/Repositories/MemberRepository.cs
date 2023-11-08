@@ -36,12 +36,12 @@ namespace ECTPFinalProject.Data.Repositories
 
         public Member GetByFirstAndLastName(string firstName, string lastName)
         {
-            return _context.Members.SingleOrDefault(x => x.FirstName == firstName && x.LastName == lastName);
+            return _context.Members.SingleOrDefault(x => x.FirstName == firstName && x.LastName == lastName) ?? throw new ArgumentNullException();
         }
 
         public Member GetById(int id)
         {
-            return _context.Members.SingleOrDefault(x => x.MemberId == id);
+            return _context.Members.SingleOrDefault(x => x.MemberId == id) ?? throw new ArgumentNullException();
         }
 
         public bool UpdateMember(Member member)

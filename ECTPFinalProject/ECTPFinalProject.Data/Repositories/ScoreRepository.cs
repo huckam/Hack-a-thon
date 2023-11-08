@@ -36,12 +36,12 @@ namespace ECTPFinalProject.Data.Repositories
 
         public Score GetById(int id)
         {
-            return _context.Scores.SingleOrDefault(x => x.ScoreId == id);
+            return _context.Scores.SingleOrDefault(x => x.ScoreId == id) ?? throw new ArgumentNullException();
         }
 
         public Score GetByWeekNumberAndMemberId(int weekNumber, int memberId)
         {
-            return _context.Scores.SingleOrDefault(x => x.WeekNumber == weekNumber && x.MemberId == memberId);
+            return _context.Scores.SingleOrDefault(x => x.WeekNumber == weekNumber && x.MemberId == memberId) ?? throw new ArgumentNullException();
         }
 
         public bool UpdateScore(Score score)

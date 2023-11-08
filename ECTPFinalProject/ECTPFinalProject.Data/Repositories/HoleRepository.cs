@@ -36,12 +36,12 @@ namespace ECTPFinalProject.Data.Repositories
 
         public Hole GetById(int id)
         {
-            return _context.Holes.SingleOrDefault(x => x.HoleId == id);
+            return _context.Holes.SingleOrDefault(x => x.HoleId == id) ?? throw new ArgumentNullException();
         }
 
         public Hole GetByHoleNumberAndCourseName(int holeNumber, string courseName)
         {
-            return _context.Holes.SingleOrDefault(x => x.HoleNumber == holeNumber && x.GolfCourse.Name == courseName);
+            return _context.Holes.SingleOrDefault(x => x.HoleNumber == holeNumber && x.GolfCourse.Name == courseName) ?? throw new ArgumentNullException();
         }
 
         public bool UpdateHole(Hole hole)

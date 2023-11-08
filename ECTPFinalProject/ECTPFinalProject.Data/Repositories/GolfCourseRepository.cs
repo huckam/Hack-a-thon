@@ -36,12 +36,12 @@ namespace ECTPFinalProject.Data.Repositories
 
         public GolfCourse GetById(int id)
         {
-            return _context.GolfCourses.SingleOrDefault(x => x.GolfCourseId == id);
+            return _context.GolfCourses.SingleOrDefault(x => x.GolfCourseId == id) ?? throw new ArgumentNullException();
         }
 
         public GolfCourse GetByName(string name)
         {
-            return _context.GolfCourses.SingleOrDefault(x => x.Name == name);
+            return _context.GolfCourses.SingleOrDefault(x => x.Name == name) ?? throw new ArgumentNullException();
         }
 
         public bool UpdateGolfCourse(GolfCourse golfCourse)

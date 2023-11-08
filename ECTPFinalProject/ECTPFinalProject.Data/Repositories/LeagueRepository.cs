@@ -36,12 +36,12 @@ namespace ECTPFinalProject.Data.Repositories
 
         public League GetById(int id)
         {
-            return _context.Leagues.SingleOrDefault(x => x.LeagueId == id);
+            return _context.Leagues.SingleOrDefault(x => x.LeagueId == id) ?? throw new ArgumentNullException();
         }
 
         public League GetByName(string name)
         {
-            return _context.Leagues.SingleOrDefault(x => x.Name == name);
+            return _context.Leagues.SingleOrDefault(x => x.Name == name) ?? throw new ArgumentNullException();
         }
 
         public bool UpdateLeague(League league)
