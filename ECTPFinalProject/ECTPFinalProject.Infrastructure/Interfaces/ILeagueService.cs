@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ECTPFinalProject.Infrastructure.Interfaces
 {
-    public interface ISampleService
+    public interface ILeagueService
     {
     }
 }
