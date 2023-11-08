@@ -1,5 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
+using ECTPFinalProject.Data.Contexts;
+using ECTPFinalProject.Data.Interfaces;
+using ECTPFinalProject.Data.Repositories;
 
 namespace ECTPFinalProject.Data.Helpers
 {
@@ -7,10 +10,12 @@ namespace ECTPFinalProject.Data.Helpers
     {
         public static IServiceCollection AddEntityFrameworkRepositories(this IServiceCollection services, Action<DbContextOptionsBuilder> setup)
         {
-            // TODO: Replace context and repositories with your own.
-
-            //services.AddDbContext<SampleContext>(setup);
-            //services.AddTransient<ISampleRepository, SampleRepository>();
+            services.AddDbContext<GolfLeagueContext>(setup);
+            services.AddTransient<IGolfCourseRepository, GolfCourseRepository>();
+            services.AddTransient<IHoleRepository, HoleRepository>();
+            services.AddTransient<ILeagueRepository, LeagueRepository>();
+            services.AddTransient<IMemberRepository, MemberRepository>();
+            services.AddTransient<IScoreRepository, ScoreRepository>();
 
             return services;
         }
