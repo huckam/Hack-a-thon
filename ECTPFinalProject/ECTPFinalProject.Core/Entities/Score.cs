@@ -14,6 +14,6 @@
         public int Hole8Score { get; set; }
         public int Hole9Score { get; set; }
         public int MemberId { get; set; }
-        public Member Member { get; set; }
+        public Member? Member { get; set; }
     }
 }
