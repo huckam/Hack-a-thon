@@ -44,6 +44,11 @@ namespace ECTPFinalProject.Data.Repositories
             return _context.Members.SingleOrDefault(x => x.MemberId == id) ?? throw new ArgumentNullException();
         }
 
+        public List<Member> GetAllMembersByLeagueId(int leagueId)
+        {
+            return _context.Members.Where(x => x.LeagueId == leagueId).ToList();
+        }
+
         public bool UpdateMember(Member member)
         {
             var existingMember = GetById(member.MemberId);

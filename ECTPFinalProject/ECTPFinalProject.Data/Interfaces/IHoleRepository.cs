@@ -12,6 +12,8 @@ namespace ECTPFinalProject.Data.Interfaces
         void CreateHole(Hole hole);
         Hole GetById(int id);
         Hole GetByHoleNumberAndCourseName(int holeNumber, string courseName);
+        List<Hole> GetFrontNineByGolfCourseId(int golfCourseId);
+        List<Hole> GetBackNineByGolfCourseId(int golfCourseId);
         bool UpdateHole(Hole hole);
         bool DeleteHole(int id);
     }
