@@ -10,7 +10,7 @@ namespace ECTPFinalProject.API.Controllers
     {
         private readonly IMemberService _memberService;
         private readonly IScoreService _scoreService;
-
+        //test push
         public GolfLeagueController(IMemberService memberService, IScoreService scoreService)
         {
             _memberService = memberService;
