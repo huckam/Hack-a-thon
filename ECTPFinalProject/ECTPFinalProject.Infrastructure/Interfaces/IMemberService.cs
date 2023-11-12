@@ -1,15 +1,12 @@
 ﻿using ECTPFinalProject.Core.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ECTPFinalProject.Infrastructure.Interfaces
 {
     public interface IMemberService
     {
-        bool AddMemberToLeague(League league, Member member);
-        bool RemoveMemberFromLeague(Member member);
+        void AddMemberToLeague(Member member);
+        bool RemoveMemberFromLeague(int memberId);
+        bool UpdateMemeber(Member member);
+        Member GetById(int memberId);
     }
 }

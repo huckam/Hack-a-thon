@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECTPFinalProject.Tests", "E
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECTPFinalProject.Website", "ECTPFinalProject.Website\ECTPFinalProject.Website.csproj", "{3602E051-3195-45A0-AF90-321B196B6470}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECTPFinalProject.API", "ECTPFinalProject.API\ECTPFinalProject.API.csproj", "{FA3169A2-6CAA-47A0-9142-848376DD5793}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECTPFinalProject.API", "ECTPFinalProject.API\ECTPFinalProject.API.csproj", "{CC58E3A6-4498-41A4-A551-F853405EBFC1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +41,10 @@ Global
 		{3602E051-3195-45A0-AF90-321B196B6470}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3602E051-3195-45A0-AF90-321B196B6470}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3602E051-3195-45A0-AF90-321B196B6470}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FA3169A2-6CAA-47A0-9142-848376DD5793}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FA3169A2-6CAA-47A0-9142-848376DD5793}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FA3169A2-6CAA-47A0-9142-848376DD5793}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FA3169A2-6CAA-47A0-9142-848376DD5793}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC58E3A6-4498-41A4-A551-F853405EBFC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC58E3A6-4498-41A4-A551-F853405EBFC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC58E3A6-4498-41A4-A551-F853405EBFC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC58E3A6-4498-41A4-A551-F853405EBFC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

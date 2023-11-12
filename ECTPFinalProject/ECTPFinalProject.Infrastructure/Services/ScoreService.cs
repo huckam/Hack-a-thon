@@ -23,13 +23,17 @@ namespace ECTPFinalProject.Infrastructure.Services
             return _scoreRepository.GetByWeekNumberAndMemberId(weekNumber, memberId);
         }
 
-        public bool SubmitScore(Score score, int memberId)
+        public List<Score> GetAllScores(int memberId)
         {
-            _scoreRepository.CreateScore(score);
-            return true;
+            return _scoreRepository.GetAllScoresByMemberId(memberId);
         }
 
-        public bool UpdateScore(Score score, int memberId)
+        public void SubmitScore(Score score)
+        {
+            _scoreRepository.CreateScore(score);
+        }
+
+        public bool UpdateScore(Score score)
         {
             throw new NotImplementedException();
         }

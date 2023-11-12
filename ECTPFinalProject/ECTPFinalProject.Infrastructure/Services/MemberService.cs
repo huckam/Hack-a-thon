@@ -13,15 +13,24 @@ namespace ECTPFinalProject.Infrastructure.Services
             _memberRepository = memberRepository;
         }
 
-        public bool AddMemberToLeague(League league, Member member)
+        public void AddMemberToLeague(Member member)
         {
-            member.LeagueId = league.LeagueId;
-            return _memberRepository.UpdateMember(member);
+            _memberRepository.CreateMember(member);
         }
 
-        public bool RemoveMemberFromLeague(Member member)
+        public Member GetById(int memberId)
         {
-            return _memberRepository.DeleteMember(member.MemberId);
+            return _memberRepository.GetById(memberId);
+        }
+
+        public bool RemoveMemberFromLeague(int memberId)
+        {
+            return _memberRepository.DeleteMember(memberId);
+        }
+
+        public bool UpdateMemeber(Member member)
+        {
+            return _memberRepository.UpdateMember(member);
         }
     }
 }

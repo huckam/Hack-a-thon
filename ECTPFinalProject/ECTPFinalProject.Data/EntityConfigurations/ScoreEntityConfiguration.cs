@@ -32,7 +32,67 @@ namespace ECTPFinalProject.Data.EntityConfigurations
                 new Score
                 {
                     ScoreId = 2,
+                    WeekNumber = 2,
+                    Hole1Score = 4,
+                    Hole2Score = 4,
+                    Hole3Score = 4,
+                    Hole4Score = 4,
+                    Hole5Score = 4,
+                    Hole6Score = 4,
+                    Hole7Score = 4,
+                    Hole8Score = 4,
+                    Hole9Score = 4,
+                    MemberId = 1
+                },
+                new Score
+                {
+                    ScoreId = 3,
+                    WeekNumber = 3,
+                    Hole1Score = 4,
+                    Hole2Score = 4,
+                    Hole3Score = 4,
+                    Hole4Score = 4,
+                    Hole5Score = 4,
+                    Hole6Score = 4,
+                    Hole7Score = 4,
+                    Hole8Score = 4,
+                    Hole9Score = 4,
+                    MemberId = 1
+                },
+                new Score
+                {
+                    ScoreId = 2,
                     WeekNumber = 1,
+                    Hole1Score = 4,
+                    Hole2Score = 4,
+                    Hole3Score = 4,
+                    Hole4Score = 4,
+                    Hole5Score = 4,
+                    Hole6Score = 4,
+                    Hole7Score = 4,
+                    Hole8Score = 4,
+                    Hole9Score = 4,
+                    MemberId = 2
+                },
+                new Score
+                {
+                    ScoreId = 1,
+                    WeekNumber = 2,
+                    Hole1Score = 4,
+                    Hole2Score = 4,
+                    Hole3Score = 4,
+                    Hole4Score = 4,
+                    Hole5Score = 4,
+                    Hole6Score = 4,
+                    Hole7Score = 4,
+                    Hole8Score = 4,
+                    Hole9Score = 4,
+                    MemberId = 2
+                },
+                new Score
+                {
+                    ScoreId = 1,
+                    WeekNumber = 3,
                     Hole1Score = 4,
                     Hole2Score = 4,
                     Hole3Score = 4,

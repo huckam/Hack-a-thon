@@ -12,6 +12,7 @@ namespace ECTPFinalProject.Data.Interfaces
         void CreateScore(Score score);
         Score GetById(int id);
         Score GetByWeekNumberAndMemberId(int weekNumber, int memberId);
+        List<Score> GetAllScoresByMemberId(int memberId);   
         bool UpdateScore(Score score);
         bool DeleteScore(int id);
     }

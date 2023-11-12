@@ -44,6 +44,11 @@ namespace ECTPFinalProject.Data.Repositories
             return _context.Scores.SingleOrDefault(x => x.WeekNumber == weekNumber && x.MemberId == memberId) ?? throw new ArgumentNullException();
         }
 
+        public List<Score> GetAllScoresByMemberId(int memberId)
+        {
+            return _context.Scores.Where(x => x.MemberId == memberId).ToList();
+        }
+
         public bool UpdateScore(Score score)
         {
             var existingScore = GetById(score.ScoreId);
