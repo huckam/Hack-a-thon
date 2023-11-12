@@ -17,6 +17,20 @@ namespace ECTPFinalProject.API.Controllers
             _leagueService = leagueService;
         }
 
+        [HttpGet("[action]/memberId")]
+        public IActionResult GetMemberById(int memberId)
+        {
+            try
+            {
+                var member = _memberService.GetById(memberId);
+                return Ok(member);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
+
         [HttpGet("[action]/leagueId")]
         public IActionResult GetAllMembersInLeague(int leagueId)
         {
