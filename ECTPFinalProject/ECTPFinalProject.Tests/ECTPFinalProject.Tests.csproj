@@ -17,7 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ECTPFinalProject.API\ECTPFinalProject.API.csproj" />
     <ProjectReference Include="..\ECTPFinalProject.Core\ECTPFinalProject.Core.csproj" />
     <ProjectReference Include="..\ECTPFinalProject.Data\ECTPFinalProject.Data.csproj" />
     <ProjectReference Include="..\ECTPFinalProject.Infrastructure\ECTPFinalProject.Infrastructure.csproj" />

@@ -5,15 +5,15 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECTPFinalProject.Core", "ECTPFinalProject.Core\ECTPFinalProject.Core.csproj", "{8F41746D-91E1-411C-B4C0-1282E447BBDE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECTPFinalProject.Data", "ECTPFinalProject.Data\ECTPFinalProject.Data.csproj", "{343AFA59-2962-4AE6-A9CF-D2F6381720E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECTPFinalProject.Data", "ECTPFinalProject.Data\ECTPFinalProject.Data.csproj", "{343AFA59-2962-4AE6-A9CF-D2F6381720E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECTPFinalProject.Infrastructure", "ECTPFinalProject.Infrastructure\ECTPFinalProject.Infrastructure.csproj", "{DD62A8DA-FAAE-4614-B8E3-D61CD3A9C15B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECTPFinalProject.Infrastructure", "ECTPFinalProject.Infrastructure\ECTPFinalProject.Infrastructure.csproj", "{DD62A8DA-FAAE-4614-B8E3-D61CD3A9C15B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECTPFinalProject.API", "ECTPFinalProject.API\ECTPFinalProject.API.csproj", "{5645A40D-574B-4345-B6BA-3006F6D1DEC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECTPFinalProject.Tests", "ECTPFinalProject.Tests\ECTPFinalProject.Tests.csproj", "{8C08CC68-DDEF-419D-9717-A484FF961D51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECTPFinalProject.Tests", "ECTPFinalProject.Tests\ECTPFinalProject.Tests.csproj", "{8C08CC68-DDEF-419D-9717-A484FF961D51}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECTPFinalProject.Website", "ECTPFinalProject.Website\ECTPFinalProject.Website.csproj", "{3602E051-3195-45A0-AF90-321B196B6470}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECTPFinalProject.Website", "ECTPFinalProject.Website\ECTPFinalProject.Website.csproj", "{3602E051-3195-45A0-AF90-321B196B6470}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECTPFinalProject.API", "APITest\ECTPFinalProject.API.csproj", "{FA3169A2-6CAA-47A0-9142-848376DD5793}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,10 +33,6 @@ Global
 		{DD62A8DA-FAAE-4614-B8E3-D61CD3A9C15B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD62A8DA-FAAE-4614-B8E3-D61CD3A9C15B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD62A8DA-FAAE-4614-B8E3-D61CD3A9C15B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5645A40D-574B-4345-B6BA-3006F6D1DEC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5645A40D-574B-4345-B6BA-3006F6D1DEC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5645A40D-574B-4345-B6BA-3006F6D1DEC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5645A40D-574B-4345-B6BA-3006F6D1DEC1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8C08CC68-DDEF-419D-9717-A484FF961D51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8C08CC68-DDEF-419D-9717-A484FF961D51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C08CC68-DDEF-419D-9717-A484FF961D51}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,6 +41,10 @@ Global
 		{3602E051-3195-45A0-AF90-321B196B6470}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3602E051-3195-45A0-AF90-321B196B6470}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3602E051-3195-45A0-AF90-321B196B6470}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA3169A2-6CAA-47A0-9142-848376DD5793}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA3169A2-6CAA-47A0-9142-848376DD5793}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA3169A2-6CAA-47A0-9142-848376DD5793}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA3169A2-6CAA-47A0-9142-848376DD5793}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

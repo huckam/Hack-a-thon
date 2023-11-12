@@ -18,31 +18,31 @@ namespace ECTPFinalProject.API.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddMemberToLeague([FromBody] League league, Member member)
+        public IActionResult AddMemberToLeague(League league, int memberId)
         {
             throw new NotImplementedException();
         }
 
         [HttpPost]
-        public IActionResult RemoveMemberFromLeague([FromBody] League, Member member)
+        public IActionResult RemoveMemberFromLeague(League league, int memberId)
         {
             throw new NotImplementedException();
         }
 
         [HttpPost]
-        public IActionResult AddScoreForMember([FromBody] Member member, Score score)
+        public IActionResult AddScoreForMember(int memberId, Score score)
         {
             throw new NotImplementedException();
         }
 
         [HttpPost]
-        public IActionResult UpdateScoreForMember([FromBody] Member member, Score score)
+        public IActionResult UpdateScoreForMember(int memberId, Score score)
         { 
             throw new NotImplementedException(); 
         }
 
         [HttpPost]
-        public IActionResult DeleteScoreForMember([FromBody] Member member, Score score)
+        public IActionResult DeleteScoreForMember(int memberId, Score score)
         {
             throw new NotImplementedException();
         }
