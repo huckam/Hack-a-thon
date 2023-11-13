@@ -8,5 +8,6 @@ namespace ECTPFinalProject.Infrastructure.Interfaces
         bool RemoveMemberFromLeague(int memberId);
         bool UpdateMemeber(Member member);
         Member GetById(int memberId);
+        List<Member> GetAllMembersByLeagueId(int leagueId);
     }
 }

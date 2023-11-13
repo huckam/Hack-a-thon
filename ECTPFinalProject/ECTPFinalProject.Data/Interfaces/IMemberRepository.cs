@@ -12,6 +12,7 @@ namespace ECTPFinalProject.Data.Interfaces
         void CreateMember(Member member);
         Member GetById(int id);
         Member GetByFirstAndLastName(string firstName, string lastName);
+        List<Member> GetAllMembersByLeagueId(int leagueId); 
         bool UpdateMember(Member member);
         bool DeleteMember(int id);
     }

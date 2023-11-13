@@ -44,6 +44,18 @@ namespace ECTPFinalProject.Data.Repositories
             return _context.Holes.SingleOrDefault(x => x.HoleNumber == holeNumber && x.GolfCourse.Name == courseName) ?? throw new ArgumentNullException();
         }
 
+        public List<Hole> GetFrontNineByGolfCourseId(int golfCourseId)
+        {
+            var holes = _context.Holes.Where(x => x.GolfCourseId == golfCourseId).ToList();
+            return holes.Where(x => x.HoleNumber < 10).ToList();
+        }
+
+        public List<Hole> GetBackNineByGolfCourseId(int golfCourseId)
+        {
+            var holes = _context.Holes.Where(x => x.GolfCourseId == golfCourseId).ToList();
+            return holes.Where(x => x.HoleNumber >= 10).ToList();
+        }
+
         public bool UpdateHole(Hole hole)
         {
             var existingHole = GetById(hole.HoleId);

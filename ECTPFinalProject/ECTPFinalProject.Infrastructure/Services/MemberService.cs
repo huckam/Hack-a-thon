@@ -23,6 +23,11 @@ namespace ECTPFinalProject.Infrastructure.Services
             return _memberRepository.GetById(memberId);
         }
 
+        public List<Member> GetAllMembersByLeagueId(int leagueId) 
+        {
+            return _memberRepository.GetAllMembersByLeagueId(leagueId);
+        }
+
         public bool RemoveMemberFromLeague(int memberId)
         {
             return _memberRepository.DeleteMember(memberId);

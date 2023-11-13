@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ECTPFinalProject.API.Controllers
 {
+    [ApiController]
+    [Route("api/[controller]")]
     public class ScoreController : Controller
     {
         private readonly IMemberService _memberService;

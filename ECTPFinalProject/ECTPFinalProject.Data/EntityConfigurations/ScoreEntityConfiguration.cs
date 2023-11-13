@@ -61,7 +61,7 @@ namespace ECTPFinalProject.Data.EntityConfigurations
                 },
                 new Score
                 {
-                    ScoreId = 2,
+                    ScoreId = 4,
                     WeekNumber = 1,
                     Hole1Score = 4,
                     Hole2Score = 4,
@@ -76,7 +76,7 @@ namespace ECTPFinalProject.Data.EntityConfigurations
                 },
                 new Score
                 {
-                    ScoreId = 1,
+                    ScoreId = 5,
                     WeekNumber = 2,
                     Hole1Score = 4,
                     Hole2Score = 4,
@@ -91,7 +91,7 @@ namespace ECTPFinalProject.Data.EntityConfigurations
                 },
                 new Score
                 {
-                    ScoreId = 1,
+                    ScoreId = 6,
                     WeekNumber = 3,
                     Hole1Score = 4,
                     Hole2Score = 4,

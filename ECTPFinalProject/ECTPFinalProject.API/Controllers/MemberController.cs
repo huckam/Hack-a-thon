@@ -1,23 +1,48 @@
 ﻿using ECTPFinalProject.Core.Entities;
 using ECTPFinalProject.Infrastructure.Interfaces;
-using Microsoft.AspNetCore.Cors.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ECTPFinalProject.API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class GolfLeagueController : Controller
+    public class MemberController : Controller
     {
         private readonly IMemberService _memberService;
-        private readonly IScoreService _scoreService;
         private readonly ILeagueService _leagueService;
 
-        public GolfLeagueController(IMemberService memberService, IScoreService scoreService, ILeagueService leagueService)
+        public MemberController(IMemberService memberService, ILeagueService leagueService)
         {
             _memberService = memberService;
-            _scoreService = scoreService;
             _leagueService = leagueService;
+        }
+
+        [HttpGet("[action]/memberId")]
+        public IActionResult GetMemberById(int memberId)
+        {
+            try
+            {
+                var member = _memberService.GetById(memberId);
+                return Ok(member);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
+
+        [HttpGet("[action]/leagueId")]
+        public IActionResult GetAllMembersInLeague(int leagueId)
+        {
+            try
+            {
+                var members = _memberService.GetAllMembersByLeagueId(leagueId);
+                return Ok(members);
+            } 
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
         }
 
         [HttpPost("[action]")]
@@ -52,7 +77,5 @@ namespace ECTPFinalProject.API.Controllers
                 return StatusCode(500, ex.Message);
             }
         }
-
-
     }
 }
