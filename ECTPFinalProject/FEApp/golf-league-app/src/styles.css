@@ -12,8 +12,14 @@
 body{
     background-color: #427AA1;
 }
+.content{
+  background-color: #427AA1;
+  margin-top: 200px;
+  color: #EBF2FA;
+}
 
   h1,
+  h2,
   h4,
   h5,
   h6 {

@@ -1,0 +1,21 @@
+
+<div></div>
+<body>
+  <div class="content" >
+    <h3>League Members</h3>
+    <table>
+      <tr>
+        <th>First</th>
+        <th>Last</th>
+        <th>Handicap</th>
+      </tr>
+      <tr *ngFor="let member of this.leagueMembers">
+        <td>{{member.firstName}}</td>
+        <td>{{member.lastName}}</td>
+        <td>{{member.handicap}}</td>
+      </tr>
+    </table>
+  
+  </div>
+  
+</body>
