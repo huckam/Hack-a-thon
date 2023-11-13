@@ -68,7 +68,7 @@ namespace ECTPFinalProject.API.Controllers
             {
                 var member = _memberService.GetById(memberId);
                 _memberService.RemoveMemberFromLeague(memberId);
-                var league = _leagueService.GetLeague(member.MemberId);
+                var league = _leagueService.GetLeague(member.LeagueId);
                 _leagueService.UpdateLeague(league);
                 return Ok();
             }
