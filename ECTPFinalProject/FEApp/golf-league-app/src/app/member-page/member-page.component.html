@@ -1,1 +1,65 @@
-<p>member-page works!</p>
+<div *ngIf="!isLoading" style="padding-top: 20px;">
+<h2>{{this.member.firstName}} {{this.member.lastName}}</h2>
+<h4>Handicap: {{this.member.handicap}}</h4>
+
+<table>
+    <tr>
+        <th>Week #</th>
+        <th>Hole 1</th>
+        <th>Hole 2</th>
+        <th>Hole 3</th>
+        <th>Hole 4</th>
+        <th>Hole 5</th>
+        <th>Hole 6</th>
+        <th>Hole 7</th>
+        <th>Hole 8</th>
+        <th>Hole 9</th>
+    </tr>
+    <tr *ngFor="let score of this.member.scores">
+        <td>{{score.weekNumber}}</td>
+        <td>{{score.hole1Score}}</td>
+        <td>{{score.hole2Score}}</td>
+        <td>{{score.hole3Score}}</td>
+        <td>{{score.hole4Score}}</td>
+        <td>{{score.hole5Score}}</td>
+        <td>{{score.hole6Score}}</td>
+        <td>{{score.hole7Score}}</td>
+        <td>{{score.hole8Score}}</td>
+        <td>{{score.hole9Score}}</td>
+    </tr>
+    <tr>
+        <td>
+        </td>
+           <td>
+            <input type="number">
+           </td>
+           <td>
+            <input type="number">
+           </td>
+           <td>
+            <input type="number">
+           </td>
+           <td>
+            <input type="number">
+           </td>
+           <td>
+            <input type="number">
+           </td>
+           <td>
+            <input type="number">
+           </td>
+           <td>
+            <input type="number">
+           </td>
+           <td>
+            <input type="number">
+           </td>
+           <td>
+            <input type="number">
+           </td>
+
+
+    </tr>
+</table>
+<button>Add Scores</button>
+</div>

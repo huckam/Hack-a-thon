@@ -4,6 +4,7 @@ import { Subscription } from 'rxjs';
 import { ApiService } from '../api.service';
 import { Member } from 'src/models/memberModel';
 import { AppComponent } from '../app.component';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-home',
@@ -23,18 +24,25 @@ export class HomePageComponent {
   ){}
 
   async ngOnInit(): Promise<void>{
-    if(this.isLive){
-      (await this.apiService.GetMembers(1)).subscribe(res => {
-        this.leagueMembers = res;
-      })
-    }
-    else{
-      this.leagueMembers = this.getMembers()
-    }
+   if(environment.production){
+    (await this.apiService.GetMembers(1)).subscribe(res => {
+      this.leagueMembers = res;
+  })
+   }
+   else{
+    this.leagueMembers = this.getMembers();
+   }
+    
+    this.isLoading = false;
    
   }
+ goToMemberScores(memberId: number){
+  console.log("?????????????????????????/")
+  this.router.navigate(['member-scores/', memberId])
+ }
+
  
-  getMembers(){
+  private getMembers(){
     var member1: Member = {
       memberId: 1,
       firstName: "John",

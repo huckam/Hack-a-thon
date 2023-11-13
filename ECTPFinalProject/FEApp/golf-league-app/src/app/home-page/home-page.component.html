@@ -2,20 +2,23 @@
 <div></div>
 <body>
   <div class="content" >
-    <h3>League Members</h3>
+    <h2>League Members</h2>
     <table>
       <tr>
-        <th>First</th>
-        <th>Last</th>
+        <th>Name</th>
         <th>Handicap</th>
       </tr>
       <tr *ngFor="let member of this.leagueMembers">
-        <td>{{member.firstName}}</td>
-        <td>{{member.lastName}}</td>
+        <td>{{member.firstName}} {{member.lastName}} </td>
         <td>{{member.handicap}}</td>
+        <td>{{member.memberId}}</td>
+        <td>
+          <button (click)="this.goToMemberScores(member.memberId)">Scores</button>
+        </td>
       </tr>
     </table>
   
   </div>
   
 </body>
+<router-outlet></router-outlet>

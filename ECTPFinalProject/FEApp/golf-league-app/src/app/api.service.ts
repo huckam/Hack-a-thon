@@ -19,4 +19,9 @@ export class ApiService {
     public async GetMembers(leagueId : number): Promise<Observable<Member[]>>{
         return this.http.get<Member[]>(this.apiEndpoint + '/members' + leagueId)
     }
+
+    public async GetMember(memberId: string): Promise<Observable<Member>>{
+        
+        return this.http.get<Member>(this.apiEndpoint + '/member' + memberId)
+    }
 }
