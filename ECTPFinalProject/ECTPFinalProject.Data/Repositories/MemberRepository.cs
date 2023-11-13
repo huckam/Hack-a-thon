@@ -1,6 +1,7 @@
 ﻿using ECTPFinalProject.Core.Entities;
 using ECTPFinalProject.Data.Contexts;
 using ECTPFinalProject.Data.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace ECTPFinalProject.Data.Repositories
 {
@@ -41,7 +42,8 @@ namespace ECTPFinalProject.Data.Repositories
 
         public Member GetById(int id)
         {
-            return _context.Members.SingleOrDefault(x => x.MemberId == id) ?? throw new ArgumentNullException();
+            //return _context.Members.SingleOrDefault(x => x.MemberId == id) ?? throw new ArgumentNullException();
+            return _context.Members.Where(x => x.MemberId == id).Include(x => x.Scores).SingleOrDefault() ?? throw new ArgumentException(); 
         }
 
         public List<Member> GetAllMembersByLeagueId(int leagueId)

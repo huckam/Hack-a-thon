@@ -14,6 +14,11 @@ builder.Services.AddEntityFrameworkRepositories(builder.Configuration.GetConnect
 
 builder.Services.AddInfrastructureServices();
 
+builder.Services.AddControllersWithViews()
+    .AddNewtonsoftJson(options =>
+    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+);
+
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 builder.Services.AddCors(options =>
 {
